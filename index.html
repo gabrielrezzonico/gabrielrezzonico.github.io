@@ -5,8 +5,14 @@ layout: default
 <div class="home">
 
   <h1 class="page-heading">Posts</h1>
-
+{% if site.GH_ENV == 'gh_pages' %}
+   <img src="{{ site.url }}/assets/gabriel.jpg">
+   Login here
+{% else %}
+   <img src="http://localhost:4000/assets/gabriel.jpg">
+{% endif %}
   <ul class="post-list">
+
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
