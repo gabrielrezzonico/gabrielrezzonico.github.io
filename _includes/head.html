@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <!-- custom css -->
-    <link rel="stylesheet" href="http://localhost:4000/assets/css/site-custom.css">
+    {% if site.GH_ENV == 'gh_pages' %} 
+        <link rel="stylesheet" href="{{ site.url }}/assets/css/site-custom.css">
+    {% else %} 
+   	<link rel="stylesheet" href="http://localhost:4000/assets/css/site-custom.css">
+    {% endif %} 
+	
     <!-- Include twitter bootstrap from MaxCDN -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
