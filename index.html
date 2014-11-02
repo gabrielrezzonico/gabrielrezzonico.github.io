@@ -22,7 +22,7 @@ layout: default
 	<hr>
 	<div class="row text-center">
 	    <div class="col-md-6">
-	    <a style="display:block" class="blockquote-box-decoration"  href="https://twitter.com/grezzonico">
+	    <a style="display:block" class="blockquote-box-decoration"  href="https://www.linkedin.com/in/gabrielrezzonico/en">
               <div class="blockquote-box blockquote-info clearfix">  
                 <div class="square pull-left">
                   <span class="fa fa-linkedin fa-4x"></span>
@@ -49,11 +49,12 @@ layout: default
 	    </div> 
 	</div>
  
-        <div class="row text-center">                                                                                                                                                                                                      <div class="col-md-6">  
+        <div class="row text-center">
+	  <div class="col-md-6">
 	   <a style="display:block" class="blockquote-box-decoration" href="https://github.com/gabrielrezzonico">
 	     <div class="blockquote-box blockquote-success clearfix">
                <div class="square pull-left">
-                 <span class="fa fa-git fa-4x"></span>
+                 <span class="fa fa-github fa-4x"></span>
                </div>
                
 	       <h4> Github</h4>
@@ -67,7 +68,7 @@ layout: default
 	  <a style="display:block" class="blockquote-box-decoration" href="https://gist.github.com/gabrielrezzonico">
             <div class="blockquote-box blockquote-info clearfix">
               <div class="square pull-left">
-                <span class="fa fa-git fa-4x"></span>
+                <span class="fa fa-github-alt fa-4x"></span>
               </div>
               <h4>Gist</h4>
               <p>
@@ -105,4 +106,32 @@ layout: default
 	    </a>
 	  </div>
         </div>
+        <div class="row text-center">
+	  <div class="col-md-6">
+	    <a style="display:block" class="blockquote-box-decoration"  href="https://twitter.com/grezzonico">
+	      <div class="blockquote-box blockquote-info clearfix">
+		<div class="square pull-left">
+		  <span class="fa fa-twitter fa-4x"></span>
+		</div>
+		<h4> Twitter</h4>
+		<p>Twitter Porfile.</p>
+	      </div>
+	   </a>
+	  </div>
+	  <div class="col-md-6">
+	    <a style="display:block" class="blockquote-box-decoration"  href="http://limoly.com">
+	      <div class="blockquote-box blockquote-primary clearfix">
+		<div class="square pull-left">
+		  {% if site.GH_ENV == 'gh_pages' %}
+		     <img src="{{ site.url }}/assets/images/limoly.png" width="50" class="img-circle">
+		  {% else %}
+		     <img src="http://localhost:4000/assets/images/limoly.png" width="50"  class="img-circle">
+		  {% endif %}
+		</div>
+		<h4> Limoly</h4>
+		<p> Limoly website. </p>
+	      </div>
+	   </a>
+	</div>
+    </div>  
 </div>
