@@ -2,7 +2,7 @@
 title: Gabriel Rezzonico
 email: gabrielrezzonico@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  This is my personal online bussiness card, Its mainly a place to gather all my social media profiles. To make this site I have used jekyll, twitter bootstrap amd font-awesome. 
+  This is my personal online bussiness card, Its mainly a place to gather all my social media profiles. To make this site I have used jekyll, twitter bootstrap and font-awesome. 
   Its hosted at github as a github page.
   I would really like to see that you fork this code and find it useful. Please don't hesitate to contact me.
 baseurl: "" # the subpath of your site, e.g. /blog/
