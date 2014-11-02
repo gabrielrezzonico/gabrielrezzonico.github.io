@@ -12,3 +12,6 @@ github_username:  gabrielrezzonico
 
 # Build settings
 markdown: kramdown
+
+# google analytics
+ga_tracking_id: UA-56331024-1
