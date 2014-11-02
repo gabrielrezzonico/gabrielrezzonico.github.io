@@ -3,27 +3,99 @@ layout: default
 ---
 
 <div class="home">
+    <div class="container">
+      <br>
+	<div class="row text-center">
+	   <div class="col-md-12">
+	   {% if site.GH_ENV == 'gh_pages' %}
+	       <img src="{{ site.url }}/assets/images/gabriel.jpg" width="160" class="img-circle">
+	       Login here
+	   {% else %}
+	       <img src="http://localhost:4000/assets/images/gabriel.jpg" width="160"  class="img-circle">
+	   {% endif %}
+	   </div>
+	 </div>
+        <div class="row text-center">
+	   <div class="col-md-12">
+             <h1 class="page-heading">Gabriel Rezzonico</h1>
+	   </div>
+         </div>	 
+	<hr>
+	<div class="row text-center">
+	    <div class="col-md-6">
+            <div class="blockquote-box clearfix">  
+                <div class="square pull-left">
+                    <span class="fa fa-linkedin fa-5x"></span>
+		</div>
+                <h4> Linkedin</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+	    </div>
+	    </div>
+	    <div class="col-md-6">
+            <div class="blockquote-box blockquote-primary clearfix">
+                <div class="square pull-left">
+                    <span class="fa fa-facebook fa-5x"></span>
+                </div>
+                <h4> Facebook</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+            </div>
+	    </div> 
+	</div>
+ 
+        <div class="row text-center">                                                                                                                                                                                                          <div class="col-md-6">  
+           <div class="blockquote-box blockquote-success clearfix">
+                <div class="square pull-left">
+                    <span class="fa fa-git fa-5x"></span>
+                </div>
+              
+		<h4> Git</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+          </div>
+          </div>
+          <div class="col-md-6">
+          <div class="blockquote-box blockquote-info clearfix">
+                <div class="square pull-left">
+                    <span class="fa fa-git fa-5x"></span>
+                </div>
+                <h4>Gist</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    ante.
+                </p>
+          </div>
+	  </div>
+        </div>
 
-  <h1 class="page-heading">Posts</h1>
-{% if site.GH_ENV == 'gh_pages' %}
-   <img src="{{ site.url }}/assets/gabriel.jpg">
-   Login here
-{% else %}
-   <img src="http://localhost:4000/assets/gabriel.jpg">
-{% endif %}
-  <ul class="post-list">
-
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+        <div class="row text-center">                                                                                                                                                                                               
+          <div class="col-md-6"> 
+          <div class="blockquote-box blockquote-warning clearfix">
+                <div class="square pull-left">
+                    <span class="fa fa-camera fa-5x"></span>
+                </div>
+                <h4> 500px</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    ante.
+                </p>
+          </div>
+	  </div>
+          <div class="col-md-6">
+          <div class="blockquote-box blockquote-danger clearfix">
+                <div class="square pull-left">
+                    <span class="fa fa-camera-retro fa-5x"></span>
+                </div>
+                <h4> Danger</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                    ante.
+                </p>
+          </div>
+	  </div>
+        </div>
 </div>
