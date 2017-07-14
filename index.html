@@ -7,26 +7,35 @@ layout: default
 	<div class="row text-center">
 	   <div class="col-md-12">
 	   {% if site.GH_ENV == 'gh_pages' %}
-	       <img src="{{ site.url }}/assets/images/gabriel.jpg" width="160" class="img-circle">
+	       <img src="{{ site.url }}/assets/images/gabriel.png" width="160" class="img-circle">
 	   {% else %}
-	       <img src="http://localhost:4000/assets/images/gabriel.jpg" width="160"  class="img-circle">
+	       <img src="http://localhost:4000/assets/images/gabriel.png" width="160"  class="img-circle">
 	   {% endif %}
 	   </div>
 	 </div>
         <div class="row text-center">
 	   <div class="col-md-12">
-             <h1>Gabriel Rezzonico</h1>
-	     <h3>Software engineer, project manager, entrepreneur, photographer</h3>
+			 	{% if site.GH_ENV == 'gh_pages' %}
+	       	<a href="https://m.me/PersonalBot-1482690408455939/" type="button" class="btn btn-default btn-lg" style="color:#0677F8; border-color: #0677F8; border-radius:22.5px"><img src="{{ site.url }}/assets/images/fb_messenger.png"> Chat on Messenger</a>
+	   		{% else %}
+	       	<a href="https://m.me/PersonalBot-1482690408455939/" type="button" class="btn btn-default btn-lg btn-round-lg btn-facebook" ><img src="http://localhost:4000/assets/images/fb_messenger.png" style="height: 20px"> Chat on Messenger</a>
+	   		{% endif %}
+
+    		<h1>Gabriel Rezzonico</h1>
+	     	<h5>Gabriel is a Senior Software Engineer who worked for 6 yeas at a best Argentinian technological company. He has developed several embedded software for the Argentinian Radar Systems, which are still in use today. He has managed several software project and led several teams during these years meeting amazing people along the way. 
+Gabriel has also founded of his own software company, developing web, mobile and artificial intelligent agent applications using leading technology. He has shown great interest in Machine Learning/Artificial intelligence.</h5>
 	   </div>
          </div>	 
 	<hr>
+
+
 	<div class="row text-center">
 	    <div class="col-md-6">
 	    <a style="display:block" class="blockquote-box-decoration"  href="https://www.linkedin.com/in/gabrielrezzonico/en">
               <div class="blockquote-box blockquote-info clearfix">  
                 <div class="square pull-left">
-                  <span class="fa fa-linkedin fa-4x"></span>
-		</div>
+                  <span class="fa fa-linkedin fa-3x"></span>
+								</div>
                 <h4> Linkedin</h4>
                 <p>
                   Linkedin Porfile.
@@ -38,7 +47,7 @@ layout: default
 	    <a style="display:block" class="blockquote-box-decoration"  href="https://www.facebook.com/gabrielrezzonico">
               <div class="blockquote-box blockquote-primary clearfix">
                 <div class="square pull-left">
-                  <span class="fa fa-facebook fa-4x"></span>
+                  <span class="fa fa-facebook fa-3x"></span>
                 </div>
                 <h4> Facebook</h4>
                 <p>
@@ -54,7 +63,7 @@ layout: default
 	   <a style="display:block" class="blockquote-box-decoration" href="https://github.com/gabrielrezzonico">
 	     <div class="blockquote-box blockquote-success clearfix">
                <div class="square pull-left">
-                 <span class="fa fa-github fa-4x"></span>
+                 <span class="fa fa-github fa-3x"></span>
                </div>
                
 	       <h4> Github</h4>
@@ -68,7 +77,7 @@ layout: default
 	  <a style="display:block" class="blockquote-box-decoration" href="https://gist.github.com/gabrielrezzonico">
             <div class="blockquote-box blockquote-info clearfix">
               <div class="square pull-left">
-                <span class="fa fa-github-alt fa-4x"></span>
+                <span class="fa fa-github-alt fa-3x"></span>
               </div>
               <h4>Gist</h4>
               <p>
@@ -83,7 +92,7 @@ layout: default
 	    <a style="display:block" class="blockquote-box-decoration"  href="https://500px.com/gabrielrezzonico">
             <div class="blockquote-box blockquote-warning clearfix">
               <div class="square pull-left">
-                <span class="fa fa-camera fa-4x"></span>
+                <span class="fa fa-camera fa-3x"></span>
               </div>
               <h4> 500px</h4>
               <p>
@@ -96,7 +105,7 @@ layout: default
 	    <a style="display:block" class="blockquote-box-decoration" href="https://secure.flickr.com/people/gabriel_rezzonico/">
             <div class="blockquote-box blockquote-danger clearfix">
               <div class="square pull-left">
-                <span class="fa fa-camera-retro fa-4x"></span>
+                <span class="fa fa-camera-retro fa-3x"></span>
               </div>
               <h4> Flicker</h4>
               <p>
@@ -111,7 +120,7 @@ layout: default
 	    <a style="display:block" class="blockquote-box-decoration"  href="https://twitter.com/grezzonico">
 	      <div class="blockquote-box blockquote-info clearfix">
 		<div class="square pull-left">
-		  <span class="fa fa-twitter fa-4x"></span>
+		  <span class="fa fa-twitter fa-3x"></span>
 		</div>
 		<h4> Twitter</h4>
 		<p>Twitter Porfile.</p>
