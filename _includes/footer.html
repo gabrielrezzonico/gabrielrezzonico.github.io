@@ -3,17 +3,16 @@
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li>
-            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="footer-col  footer-col-2">
+      <div class="footer-col col-md-6">
         <ul class="social-media-list">
+          {% if site.email %}
+            <li>
+              <a href="mailto:{{ site.email }}">
+                <i class="fa fa-envelope social-link"></i> <span class="username">{{ site.email }}</span>
+              </a>
+              </a>
+            </li>
+          {% endif %}
           {% if site.github_username %}
           <li>
             <a href="https://github.com/{{site.github_username}}">
@@ -38,7 +37,7 @@
         </ul>
       </div>
 
-      <div class="footer-col  footer-col-3">
+      <div class="footer-col col-md-6">
         <p class="text">{{ site.description }}</p>
       </div>
     </div>
