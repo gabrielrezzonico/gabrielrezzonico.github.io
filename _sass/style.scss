@@ -1,0 +1,255 @@
+@import "rouge-base16-dark";
+@import "default_colors";
+
+$body-background: $cod-grey !default;
+$body-foreground: $gallery !default;
+$header: $conifer !default;
+$blockquote-color: $silver-chalice !default;
+$blockquote-border: $dove-grey !default;
+$container-max-width: 1000px;
+
+@mixin media-max-width($max-width) {
+  @media (max-width: $max-width) {
+    @content;
+  }
+}
+
+@font-face {
+  font-family: "hack";
+  src: url("../fonts/Hack-Regular.ttf") format("ttf");
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "hack";
+  src: url("../fonts/Hack-Regular.ttf") format("ttf");
+  font-style: italic;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "hack";
+  src: url("../fonts/Hack-Bold.ttf") format("ttf");
+  font-style: bold;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $body-background;
+  color: $body-foreground;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "hack", monospace;
+  color: #ccc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  width: 90%;
+  max-width: $container-max-width;
+  margin: 0 auto;
+}
+
+@keyframes myAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation-name: myAnimation;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.container {
+  width: 90%;
+  max-width: $container-max-width;
+  margin: 0 auto;
+}
+
+section {
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  line-height: 1.4;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-bottom: 1px dashed $conifer;
+  padding: 20px 0;
+  margin: 0 0 40px 0;
+}
+
+header h1 {
+  font-size: 30px;
+  line-height: 1.5;
+  margin: 0 0 0 0;
+  font-weight: bold;
+  color: $conifer;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1), 0 0 10px rgba(181, 232, 83, 0.1);
+  letter-spacing: -1px;
+  -webkit-font-smoothing: antialiased;
+  @include media-max-width($container-max-width) {
+    margin-left: 0;
+  }
+}
+
+header h2 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #666;
+}
+
+#main_content {
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+section img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  color: $header;
+  letter-spacing: -0.03em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1), 0 0 10px rgba(181, 232, 83, 0.1);
+}
+
+#main_content h1 {
+  font-size: 30px;
+}
+
+#main_content h2 {
+  font-size: 24px;
+}
+
+#main_content h3 {
+  font-size: 18px;
+}
+
+#main_content h4 {
+  font-size: 14px;
+}
+
+#main_content h5 {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+}
+
+#main_content h6 {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #999;
+  margin: 0 0 5px 0;
+}
+
+dt {
+  font-style: italic;
+  font-weight: bold;
+}
+
+blockquote {
+  color: $blockquote-color;
+  padding-left: 10px;
+  border-left: 1px dotted $blockquote-border;
+}
+
+pre {
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  font-size: 16px;
+  color: #b5e853;
+  border-radius: 2px;
+  word-wrap: normal;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+code.highlighter-rouge {
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0px 3px;
+  margin: 0px -3px;
+  color: #aa759f;
+  border-radius: 2px;
+}
+
+table {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+th {
+  text-align: left;
+  border-bottom: 1px dashed #b5e853;
+  padding: 5px 10px;
+}
+
+td {
+  padding: 5px 10px;
+}
+
+hr {
+  height: 0;
+  border: 0;
+  border-bottom: 1px dashed #b5e853;
+  color: #b5e853;
+}
+
+a {
+  color: #63c0f5;
+  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+}
+
+#a-title {
+  text-decoration: none;
+}
+
+footer {
+  padding-bottom: 10px;
+  left: auto;
+  text-align: center;
+}
