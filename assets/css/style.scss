@@ -2,3 +2,8 @@
 ---
 
 @import "style";
+
+img[src$="centerimage"] {
+  display: block;
+  margin: 0 auto;
+}
